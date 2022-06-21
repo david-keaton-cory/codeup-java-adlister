@@ -5,8 +5,9 @@ public class User {
     private String username;
     private String email;
     private String password;
+    private String date;
 
-    public User() {}
+    public User(long id, String email, String username, String password, String dateMade) {}
 
     public User(long id, String username, String email, String password) {
         this.id = id;
@@ -20,6 +21,9 @@ public class User {
         this.email = email;
         this.password = password;
 
+    }
+
+    public User(String username, String email, String password, String currentDate) {
     }
 
     public long getId() {
@@ -53,4 +57,13 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 }
+
