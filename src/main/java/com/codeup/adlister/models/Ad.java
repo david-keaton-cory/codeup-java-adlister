@@ -10,7 +10,7 @@ public class Ad {
     private String dateMade;
     private String catString;
 
-    public Ad(long id, String title, String description) {
+    public Ad(long id, long userId, String title, String description, String username, String dateMade, String catString) {
         this.id = id;
         this.userId = userId;
         this.title = title;
@@ -53,9 +53,6 @@ public class Ad {
         this.dateMade = dateMade;
         this.catString = catString;
         this.category_id = category_id;
-    }
-
-    public Ad(long id, long user_id, String title, String description) {
     }
 
     public long getId() {

@@ -12,11 +12,16 @@
 <div class="container">
     <h1>Here Are all the ads!</h1>
 
+
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
-            <h2>${ad.title}</h2>
-            <p>${ad.description}</p>
-        </div>
+        <a href="/viewAd?adId=${ad.id}">
+            <div class="cardAd col-md-4" style="word-wrap: break-word;">
+                <h2>${ad.title}</h2>
+                <p>${ad.description}</p>
+                <p>Created On: ${ad.dateMade}</p>
+                <p>Categories: ${ad.catString}</p>
+            </div>
+        </a>
     </c:forEach>
 </div>
 

@@ -34,7 +34,7 @@
         <div class="container w-text text-center">
           <h1>${ad.title}</h1>
           <p>${ad.description}</p>
-          <p>Posted on ${ad.dateMade}</p>
+<%--          <p>Posted on ${ad.dateMade}</p>--%>
           <p>Categories: ${ad.catString}</p>
           <span>Posted by: </span><a class="red-hover w-text" href="viewOtherProfile?username=${ad.username}">${ad.username}</a>
           <c:if test="${belongsToUser == true}" >

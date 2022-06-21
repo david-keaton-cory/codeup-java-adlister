@@ -16,5 +16,4 @@ public interface Users {
     int updateUsername(String username, long id) throws SQLIntegrityConstraintViolationException;
     int updateEmail(String email, long id) throws SQLIntegrityConstraintViolationException;
     int updatePassword(String password, long id) throws SQLIntegrityConstraintViolationException;
-
 }

@@ -1,30 +1,30 @@
 package com.codeup.adlister.models;
 
+import com.codeup.adlister.util.Password;
+
 public class User {
     private long id;
     private String username;
     private String email;
     private String password;
-//    private String date;
+    private String date;
 
-    public User(long id, String email, String username, String password, String dateMade) {
+    public User() {}
+
+    public User(String username, String email, String password, String date) {
+        this.username = username;
+        this.email = email;
+        setPassword(password);
+        this.date = date;
+
     }
 
-    public User(long id, String username, String email, String password) {
+    public User(long id, String email, String username, String password, String date) {
         this.id = id;
         this.username = username;
         this.email = email;
         this.password = password;
-    }
-
-    public User(String username, String email, String password) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-
-    }
-
-    public User(String username, String email, String password, String currentDate) {
+        this.date = date;
     }
 
     public long getId() {
@@ -56,16 +56,14 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = Password.hash(password);
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
-
-//    public String getDate() {
-//        return date;
-//    }
-//
-//    public void setDate(String date) {
-//        this.date = date;
-//    }
-//}
-

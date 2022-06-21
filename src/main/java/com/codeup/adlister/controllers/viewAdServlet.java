@@ -21,21 +21,22 @@ public class viewAdServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         long adId = Long.parseLong(request.getParameter("adId"));
 
+        Ad ad = null;
         try {
-            Ad ad = DaoFactory.getAdsDao().createAdObject(adId);
-            request.setAttribute("ad", ad);
-            if (request.getSession().getAttribute("user") != null) {
-                User currentUser = (User) request.getSession().getAttribute("user");
-                String currentUsername = currentUser.getUsername();
-                if (ad.getUsername().equals(currentUsername)) {
-                    request.setAttribute("belongsToUser", true);
-                }
-
-            }
-            request.getRequestDispatcher("/WEB-INF/ads/viewAd.jsp").forward(request, response);
+            ad = DaoFactory.getAdsDao().createAdObject(adId);
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        request.setAttribute("ad", ad);
+        if (request.getSession().getAttribute("user") != null) {
+            User currentUser = (User) request.getSession().getAttribute("user");
+            String currentUsername = currentUser.getUsername();
+            if (ad.getUsername().equals(currentUsername)) {
+                request.setAttribute("belongsToUser", true);
+            }
+
+        }
+        request.getRequestDispatcher("/WEB-INF/ads/viewAd.jsp").forward(request, response);
 
     }
 }
