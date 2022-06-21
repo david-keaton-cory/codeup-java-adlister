@@ -5,9 +5,10 @@ public class User {
     private String username;
     private String email;
     private String password;
-    private String date;
+//    private String date;
 
-    public User(long id, String email, String username, String password, String dateMade) {}
+    public User(long id, String email, String username, String password, String dateMade) {
+    }
 
     public User(long id, String username, String email, String password) {
         this.id = id;
@@ -57,13 +58,14 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
 }
+
+//    public String getDate() {
+//        return date;
+//    }
+//
+//    public void setDate(String date) {
+//        this.date = date;
+//    }
+//}
 
