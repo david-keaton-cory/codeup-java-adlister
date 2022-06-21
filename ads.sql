@@ -1,3 +1,5 @@
+use database ads;
+
 CREATE TABLE users (
                        id INT UNSIGNED AUTO_INCREMENT,
                        email VARCHAR(100) NOT NULL,
