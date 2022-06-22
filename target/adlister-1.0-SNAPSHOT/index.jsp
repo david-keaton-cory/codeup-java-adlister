@@ -21,7 +21,7 @@
                     <h5 class="card-title font-weight-bold">Not a member yet?</h5>
                     <p class="card-text">Don't shop or list your valuable items at those other sketchy adlisters, sign up with Gregslist todayyy!</p>
                     <form action="/register" method="GET">
-                        <a href="/register" class="btn btn-primary text-light blk" style="background:#d4372b">Register</a>
+                        <a href="/register" class="btn btn-primary text-light blk" style="background:cornflowerblue">Register</a>
                     </form>
                 </div>
             </div>
