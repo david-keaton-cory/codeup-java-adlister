@@ -14,7 +14,7 @@
 
 
     <c:forEach var="ad" items="${ads}">
-        <a href="/ads/viewAd?adId=${ad.id}">
+        <a href="/viewAd?adId=${ad.id}">
             <div class="cardAd col-md-4" style="word-wrap: break-word;">
                 <h2>${ad.title}</h2>
                 <p>${ad.description}</p>
