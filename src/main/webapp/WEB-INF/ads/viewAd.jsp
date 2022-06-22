@@ -44,9 +44,9 @@
         </div>
       </div>
       <div class="col-md-6 pr-4 pt-4">
-        <div class="container">
-          <img src="../../img/adMap.png" width="100%" class="d-inline-block align-top" alt="Map of ad">
-        </div>
+<%--        <div class="container">--%>
+<%--          <img src="../../img/adMap.png" width="100%" class="d-inline-block align-top" alt="Map of ad">--%>
+<%--        </div>--%>
       </div>
 
     </div>
