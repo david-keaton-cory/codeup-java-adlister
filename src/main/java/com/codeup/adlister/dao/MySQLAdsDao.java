@@ -219,13 +219,13 @@ public class MySQLAdsDao implements Ads {
         return ps.executeUpdate();
     }
 
-    public List<Ad> findAdByKeyword(String keyword) throws SQLException {
+    public List<Ad> findAdByKeyword(String searchTerm) throws SQLException {
         String query = "SELECT *, users.username FROM ads\n" +
                 "JOIN users\n" +
                 "ON users.id = ads.user_id\n" +
                 "WHERE ads.title LIKE ?";
         PreparedStatement ps = connection.prepareStatement(query);
-        ps.setString(1, "%" + keyword + "%");
+        ps.setString(1, "%" + searchTerm + "%");
         ResultSet rs = ps.executeQuery();
         List<Ad> keywordAds = new ArrayList<>();
         while (rs.next()) {

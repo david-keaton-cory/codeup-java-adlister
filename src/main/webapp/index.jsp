@@ -12,8 +12,8 @@
 <div class="container">
     <div class="row pt-3">
         <div class="col-7 w-text">
-            <h1>Nedslist</h1>
-            <h4>(Not to be confused with Craigslist) Buy, Sell, Trade, or post Job opportunities! Come one come all and browse through your communities amazing ads at prices no one can beat.</h4>
+            <h1>Personal Trainers</h1>
+            <h4> Link up with a personal trainer with unique styles.</h4>
         </div>
         <div class="col-5">
             <div class="card">
