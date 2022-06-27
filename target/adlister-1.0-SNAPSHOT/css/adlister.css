@@ -1,0 +1,27 @@
+.jumbotron {
+    background-color: cornflowerblue;
+}
+
+body {
+    text-align: center;
+}
+
+#register {
+    text-align: center;
+}
+
+.home-list {
+    font-size: 16px;
+}
+
+svg {
+    margin-bottom: 5px;
+}
+
+.card {
+    margin-top: 75px;
+}
+
+.ads-title {
+    margin-top: 50px;
+}

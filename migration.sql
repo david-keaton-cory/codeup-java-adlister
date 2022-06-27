@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS `adlister_db`;
+DROP DATABASE IF EXISTS adlister_db;
 CREATE DATABASE adlister_db;
 USE adlister_db;
 DROP TABLE IF EXISTS users;
@@ -38,7 +38,6 @@ CREATE TABLE adCategories (
                 FOREIGN KEY (ad_id) REFERENCES ads(id),
                 FOREIGN KEY (category_id) REFERENCES categories(id)
 );
-
 INSERT INTO categories (category) VALUES
                 ('sports'),
                 ('camping'),

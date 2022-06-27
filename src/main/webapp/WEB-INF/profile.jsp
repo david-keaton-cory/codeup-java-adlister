@@ -18,20 +18,19 @@
     <h1 class="welcome-msg">Welcome back, ${sessionScope.user.username}!</h1>
     <div class="row">
         <div class="col-12">
-            <div class="card mb-5" style="width: 25rem;">
+            <div class="">
                 <div class="card-body account-info">
                     <h5 class="card-title"><i class="fas fa-user-circle fa-2x"></i>Account Details:</h5>
                     <p class="card-text">Email: ${sessionScope.user.email}</p>
                     <p class="card-text">Member since: <strong>${sessionScope.user.date}</strong></p>
                     <p class="card-text">Number of posted ads: ${numberOfAds}</p>
-                    <span><a href="/profile/edit" class="btn btn-primary text-center">Update/Edit</a></button>
-                    <a href="/ads/create" class="btn btn-primary text-center">Create</a></button></span>
-
+                    <span><a href="/profile/edit" class="btn btn-primary text-center">Update/Edit Profile</a>
+                    <a href="/ads/create" class="btn btn-primary text-center">Create Ad</a></span>
                 </div>
             </div>
             <%-- My Ads Title--%>
-            <h2 class="ads-title text-center" style="color: white;">My Ads</h2>
-            <hr>
+            <h2 class="ads-title text-center" style="color: black;">My Ads:</h2>
+            <hr style="border: 1px solid black; width: 85%;">
             <div class="container">
                 <c:forEach var="ad" items="${sessionScope.userAds}" >
                     <a href="/viewAd?adId=${ad.id}">
@@ -48,8 +47,8 @@
             </div>
         </div>
     </div>
-<%--    <jsp:include page="/WEB-INF/partials/js-script.jsp" />--%>
-<%--    <jsp:include page="/WEB-INF/partials/footer.jsp" />--%>
+    <%--    <jsp:include page="/WEB-INF/partials/js-script.jsp" />--%>
+    <%--    <jsp:include page="/WEB-INF/partials/footer.jsp" />--%>
 </div>
 </body>
 </html>
