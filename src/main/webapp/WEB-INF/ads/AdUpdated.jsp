@@ -33,7 +33,7 @@
 
 <div style="text-align: center">
   <div>
-    <img src="../../img/nicholas.png" class="nicholas">
+    <img src="../../img/thumbs-up.jpeg" class="nicholas">
   </div>
   <a href="/profile" style="color: white">Go back to profile</a>
   <span style="color: white"> | </span>
