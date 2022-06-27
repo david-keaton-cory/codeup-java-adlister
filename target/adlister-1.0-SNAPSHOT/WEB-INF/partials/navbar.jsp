@@ -15,7 +15,7 @@
             </ul>
             <span class="navbar-text">
             <ul class="navbar-nav mr-auto">
-                <form  class="form-inline my-2 my-lg-0" action="/searchAds" method="POST">
+                <form  class="search-nav form-inline my-2 my-lg-0" action="/searchAds" method="POST">
                     <input class="btn btn-outline-danger my-2 my-sm-0" type='submit'><a href="/searchAds"></a>
                     <input class="form-control mr-sm-2" type="search" placeholder="Search for ad" aria-label="Search" name="keyword">
                 </form>

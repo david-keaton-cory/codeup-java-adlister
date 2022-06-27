@@ -31,7 +31,7 @@ public class MySQLAdsDao implements Ads {
     public List<Ad> all() {
         PreparedStatement stmt = null;
         try {
-            stmt = connection.prepareStatement("SELECT ads.id, ads.user_id, users.username, ads.title, ads.description, ads.dateMade, ads.catString\n" +
+            stmt = connection.prepareStatement("SELECT ads.id, ads.user_id, users.username, ads.title, ads.description, ads.dateMade" +
                     "FROM ads\n" +
                     "JOIN users\n" +
                     "ON users.id = ads.user_id;");
@@ -44,8 +44,7 @@ public class MySQLAdsDao implements Ads {
                         rs.getString("title"),
                         rs.getString("description"),
                         rs.getString("username"),
-                        rs.getString("dateMade"),
-                        rs.getString("catString")
+                        rs.getString("dateMade")
                 );
                 allAds.add(newAd);
             }

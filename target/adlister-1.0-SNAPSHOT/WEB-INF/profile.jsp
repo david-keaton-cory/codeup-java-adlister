@@ -24,8 +24,8 @@
                     <p class="card-text">Email: ${sessionScope.user.email}</p>
                     <p class="card-text">Member since: <strong>${sessionScope.user.date}</strong></p>
                     <p class="card-text">Number of posted ads: ${numberOfAds}</p>
-                    <span><a href="/profile/edit" class="btn btn-primary text-center">Update/Edit</a></button>
-                    <a href="/ads/create" class="btn btn-primary text-center">Create</a></button></span>
+                    <span><a href="/profile/edit" class="btn btn-primary text-center">Update/Edit</a>
+                    <a href="/ads/create" class="btn btn-primary text-center">Create</a></span>
 
                 </div>
             </div>

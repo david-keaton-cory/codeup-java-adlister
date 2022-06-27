@@ -14,7 +14,7 @@
 
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 <div class="container">
-    <h1 class="loginHeading">Please Log In</h1>
+    <h1 class="loginHeading">Please Log In:</h1>
     <c:if test="${passwordMatch == false}">
         <p style="color:red">Incorrect Password for this account. Please try again.</p>
     </c:if>
