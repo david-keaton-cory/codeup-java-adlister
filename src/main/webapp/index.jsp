@@ -162,7 +162,6 @@
     changeHeaderText();
 
 </script>
-
 <%-- ALL OTHER PAGES NEED THIS TAG--%>
 <%--    <jsp:include page="WEB-INF/partials/js-script.jsp" />--%>
 <%--    <jsp:include page="/WEB-INF/partials/footer.jsp" />--%>
