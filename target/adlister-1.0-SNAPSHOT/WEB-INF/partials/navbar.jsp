@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<nav id="mainNav" class="navbar navbar-expand-lg red-hover">
+<link rel="stylesheet" type="text/css" href="css/adlister.css">
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 <%--        <img src="../../img/navGee.png" width="60" height="60" class="d-inline-block align-top" alt="">--%>
         <%--<a id="navCoName" class="navbar-brand w-text" href="#"> regslist</a>--%>

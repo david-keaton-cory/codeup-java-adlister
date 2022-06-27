@@ -155,7 +155,7 @@
         }, 16000);
 
         setInterval(function () {
-            $('#main-header').html('Need a New Whip?');
+            $('#main-header').html('Need a New Car?');
             $('#main-header-info').html('Cars at great prices are constantly being posted!');
         }, 20000);
     }
