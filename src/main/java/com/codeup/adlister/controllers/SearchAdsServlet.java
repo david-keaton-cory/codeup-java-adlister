@@ -32,7 +32,7 @@ public class SearchAdsServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-//            request.setAttribute("ads", keywordAds);
+
 
 
 

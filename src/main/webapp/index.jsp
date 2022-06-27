@@ -12,8 +12,8 @@
 <div class="container">
     <div class="row pt-3">
         <div class="col-7 w-text">
-            <h1>Personal Trainers</h1>
-            <h4> Link up with a personal trainer with unique styles.</h4>
+            <h1>Classifieds</h1>
+            <h4> Find any and everything!</h4>
         </div>
         <div class="col-5">
             <div class="card">
