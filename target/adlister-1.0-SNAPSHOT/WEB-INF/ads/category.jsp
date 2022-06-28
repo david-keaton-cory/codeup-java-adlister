@@ -32,6 +32,9 @@
 
   <div class="col-10">
     <div class="container pb-5 pt-5">
+      <c:if test="${cat == null}" >
+        <h1 class="w-text">All ads</h1>
+      </c:if>
       <c:if test="${cat == 'sports'}" >
         <h1 class="w-text">All ads related to Sports</h1>
       </c:if>

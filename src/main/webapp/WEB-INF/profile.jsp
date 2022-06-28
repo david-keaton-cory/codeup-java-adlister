@@ -30,7 +30,7 @@
             </div>
             <%-- My Ads Title--%>
             <h2 class="ads-title text-center" style="color: black;">My Ads:</h2>
-            <hr style="border: 1px solid black; width: 85%;">
+            <hr style="border: 1px solid black;">
             <div class="container">
                 <c:forEach var="ad" items="${sessionScope.userAds}" >
                     <a href="/viewAd?adId=${ad.id}">

@@ -25,14 +25,14 @@
     <form action="/login" method="POST">
         <div class="loginDiv">
             <div class="form-group">
-                <label for="username">Username</label>
-                <input id="username" name="username" class="form-control loginInput" type="text">
+                <label for="username">Username:</label>
+                <input id="username" name="username" class="form-control loginInput text-center" type="text">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
-                <input id="password" name="password" class="form-control loginInput" type="password">
+                <label for="password">Password:</label>
+                <input id="password" name="password" class="form-control loginInput text-center" type="password">
             </div>
-            <input type="submit" class="btn btn-block loginBtn" value="Log In">
+            <input type="submit" class="btn btn-block loginBtn btn-primary" value="Log In">
         </div>
     </form>
 </div>

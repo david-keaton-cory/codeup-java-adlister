@@ -36,7 +36,7 @@
                     <div class="form-group col-md-6">
                         <h3>Title</h3>
                         <textarea class="form-control" name="title" rows="5" cols="50">${ad.title}</textarea>
-                        <h3 class="pt-3">Description</h3>
+                        <h3 class="pt-3">Description:</h3>
                         <textarea class="form-control" name="description" rows="15" cols="50">${ad.description}</textarea>
                     </div>
 

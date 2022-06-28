@@ -29,8 +29,8 @@
                 <div class="container w-text text-center">
                     <h1>${ad.title}</h1>
                     <p>${ad.description}</p>
-                    <p>Categories: ${ad.catString}</p>
-                    <span>Posted by: </span><a class="red-hover w-text" href="viewOtherProfile?username=${ad.username}">${ad.username}</a>
+                    <p>${ad.catString}</p>
+                    <span></span><a class="red-hover w-text" href="viewOtherProfile?username=${ad.username}">${ad.username}</a>
                     <c:if test="${belongsToUser == true}" >
                         <br>
                         <button><a href="/editAd?adId=${ad.id}">Edit Ad</a></button>

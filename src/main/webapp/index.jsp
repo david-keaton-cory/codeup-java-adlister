@@ -118,8 +118,8 @@
                 </c:forEach>
             </div>
         </div>
-
     </div>
+
     <div id="register" class="col-12 card">
         <div class="card-body reg">
             <h5 class="card-title font-weight-bold">Not a member yet?</h5>
