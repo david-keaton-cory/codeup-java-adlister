@@ -26,7 +26,7 @@ public class MySQLCategoriesDao implements Categories{
     @Override
     public void insert(long adId, long categoryId){
         try {
-            String query = "INSERT INTO ad_categories(ad_id, category_id) VALUES (?, ? )";
+            String query = "INSERT INTO adCategories(ad_id, category_id) VALUES (?, ? )";
             PreparedStatement stat = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             stat.setLong(1, adId);
             stat.setLong(2, categoryId);
@@ -40,7 +40,7 @@ public class MySQLCategoriesDao implements Categories{
         int[] categories = {0, 0, 0, 0, 0, 0, 0};
         List<Long> catIds = new ArrayList<>();
         try {
-            String query = "SELECT category_id FROM ad_categories WHERE ad_id = ?";
+            String query = "SELECT category_id FROM adCategories WHERE ad_id = ?";
             PreparedStatement stmt = connection.prepareStatement(query);
             stmt.setLong(1, adId);
             ResultSet rs = stmt.executeQuery();
@@ -76,7 +76,7 @@ public class MySQLCategoriesDao implements Categories{
 
     @Override
     public void delete(long adId) {
-        String query = "DELETE FROM ad_categories WHERE ad_id = ?";
+        String query = "DELETE FROM adCategories WHERE ad_id = ?";
         try {
             PreparedStatement stmt = connection.prepareStatement(query);
             stmt.setLong(1, adId);
