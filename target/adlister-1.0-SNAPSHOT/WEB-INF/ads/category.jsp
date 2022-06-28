@@ -75,7 +75,7 @@
         </a>
       </c:forEach>
     </div>
-<%--    <jsp:include page="/WEB-INF/partials/js-script.jsp" />--%>
+<%--    <jsp:include page="/WEB-INF/partials/js-script.jsp" />---%>
 <%--    <jsp:include page="/WEB-INF/partials/footer.jsp" />--%>
   </div>
 </div>
