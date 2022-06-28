@@ -136,7 +136,7 @@
 <%-- Inline Custom JS Script Here: --%>
 <script>
     function changeHeaderText () {
-        $('#main-header').html('Welcome to Gregslist!');
+        $('#main-header').html('Welcome to Frequenting!');
         $('#main-header-info').html('Search ads or post ads from a wide range of categories!');
 
         setInterval(function () {
