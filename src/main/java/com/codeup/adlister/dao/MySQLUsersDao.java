@@ -160,21 +160,21 @@ public class MySQLUsersDao implements Users {
     }
 
     // we already have password check in password util... do we even need this?
-    @Override
-    public boolean validatePassword(String password) throws SQLException {
-        boolean passwordCorrect = false;
-        String query = "SELECT * FROM users WHERE password = ?";
-
-        PreparedStatement ps = connection.prepareStatement(query);
-        ps.setString(1, password);
-        ResultSet rs = ps.executeQuery();
-        while (rs.next()) {
-            System.out.println("this is password in while loop: " + password);
-            System.out.println("passwordCorrect: " + passwordCorrect);
-            if (rs.getString("password").equals(password)) {
-                passwordCorrect = true;
-            }
-        }
-        return passwordCorrect;
-    }
+//    @Override
+//    public boolean validatePassword(String password) throws SQLException {
+//        boolean passwordCorrect = false;
+//        String query = "SELECT * FROM users WHERE password = ?";
+//
+//        PreparedStatement ps = connection.prepareStatement(query);
+//        ps.setString(1, password);
+//        ResultSet rs = ps.executeQuery();
+//        while (rs.next()) {
+//            System.out.println("this is password in while loop: " + password);
+//            System.out.println("passwordCorrect: " + passwordCorrect);
+//            if (rs.getString("password").equals(password)) {
+//                passwordCorrect = true;
+//            }
+//        }
+//        return passwordCorrect;
+//    }
 }

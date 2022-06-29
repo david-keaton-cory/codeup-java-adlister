@@ -20,7 +20,7 @@ public class RegisterServlet extends HttpServlet {
         String password = request.getParameter("password");
         String passwordConfirmation = request.getParameter("confirm_password");
 
-        // why are we using this?
+
         User user = (User) request.getSession().getAttribute("user");
 
         // validate input
