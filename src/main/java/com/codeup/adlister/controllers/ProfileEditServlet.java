@@ -44,7 +44,7 @@ public class ProfileEditServlet extends HttpServlet {
         System.out.println("confirmNewPassword password is :" + confirmNewPassword);
 
 
-// ================== password update logic (moved this to the top, and was able to work correctly================== \\
+        // ================== password update logic================== \\
         if (username == null && email == null) {
             if (Password.check(password, currentPassword)) {
                 request.setAttribute("passwordsMatch", true);
